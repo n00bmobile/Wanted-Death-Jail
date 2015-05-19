@@ -1,4 +1,4 @@
-hook.Add("PlayerSpawn", "checkForDeath", function(ply)
+hook.Add("PlayerSpawn", "deathJailWanted", function(ply)
     if ply:getDarkRPVar("wanted", true) then
 	    ply:setDarkRPVar("wanted", false)
 		ply:arrest()
